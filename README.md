@@ -1,24 +1,44 @@
-# README
+# streakr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-Things you may want to cover:
+> App which will notify your streak progress
 
-* Ruby version
+## Table of Contents
 
-* System dependencies
+- [streakr](#streakr)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Maintainers](#maintainers)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-* Configuration
+## Install
 
-* Database creation
+```
+brew tap heroku/brew && brew install heroku #install heroku
+bundle install #install rails dependencies
+yarn install #install npm dependencies
+```
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+```
+foreman start #To start using foreman
+heroku local #To run the application using heroku locally
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Maintainers
 
-* Deployment instructions
+[@worldofprasanna](https://github.com/worldofprasanna)
 
-* ...
+## Contributing
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © 2019 Prasanna V

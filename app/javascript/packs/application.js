@@ -1,17 +1,19 @@
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
+import Vue from 'vue'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
-require("channels")
+Vue.use(Vuetify)
 
+import App from '../components/app.vue'
+import HelloWorld from '../components/HelloWorld.vue'
 
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
-// const images = require.context('../images', true)
-// const imagePath = (name) => images(name, true)
+Vue.component('app-component', App)
+Vue.component('hello-world-component', HelloWorld)
+
+document.addEventListener('DOMContentLoaded', () => {
+	const vueApp = new Vue({
+		el: 'div#vue-target',
+		vuetify: new Vuetify
+	})
+})
+
