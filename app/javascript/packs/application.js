@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import router from "../router"
 import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(Vuetify)
@@ -13,7 +14,8 @@ Vue.component('hello-world-component', HelloWorld)
 document.addEventListener('DOMContentLoaded', () => {
 	const vueApp = new Vue({
 		el: 'div#vue-target',
-		vuetify: new Vuetify
+		vuetify: new Vuetify,
+		router
 	})
 })
 

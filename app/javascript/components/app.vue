@@ -1,33 +1,23 @@
 <template>
-  <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-app-bar>
-
+  <v-app class="grey lighten-5">
     <v-content>
-      <hello-world-component />
+      <router-view></router-view>
     </v-content>
+    <v-footer class="pa-3 justify-center pl-0">
+      <p class="font-weight-bold">Made with 
+          <v-btn fab dark small color="pink lighten-2">
+                <v-icon dark>favorite</v-icon>
+          </v-btn> by Prasanna
+        </p>
+    </v-footer>
   </v-app>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data () {
-    return {
-      //
-    }
+  name: "App",
+  data() {
+    return {};
   }
-}
+};
 </script>
