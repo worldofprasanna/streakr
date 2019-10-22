@@ -1,6 +1,7 @@
 # streakr
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c6d4390701f29b6c42fd/maintainability)](https://codeclimate.com/github/worldofprasanna/streakr/maintainability)
 
 > App which will notify your streak progress
 
